@@ -1,0 +1,31 @@
+
+Hi Andrejs,
+
+Ok attached are the following:
+	
+default.css
+My default css code I use for all apps. It contains the standard Essex style colours and some settings for panels etc to get the right look. (There may be bits of old redundant code in here, I haven't had a clean up for a while).
+
+UofEheader.php
+This contains the svg of the Essex logo. I just include it at the top of a pages using something like: <?php include "include/UofEheader.php"; ?>
+
+ldapHelper.php
+This is the ldap login code containing two functions. These are:
+	ldapLogin(ldapLogin($user, $pass, $forward)
+		$user: The username supplied in the login form (ie their email address)
+		$pass: The password supplied in the login form
+		$forward: Path to the page to go to if login fails.
+		returns: The ldap connection object.
+	ldapGetGroups($ldap, $accountname)
+		$ldap: The ldap connection object.
+		$accountname (user name with the "@essex.ac.uk" part.
+		returns: A php map of the ldap groups the user belongs to.
+
+email.php
+A vimple example of email generation.
+If you go to https://www.php.net/manual/en/function.mail.php you can find info about additional headers to CC, BCC etc.
+Attachments are much more complicated and probably easier with an external library.
+
+Finally, you can find a list of the LDAP groups I use for access control here:
+https://csee.essex.ac.uk/techwiki/doku.php?id=technical-team:csee-app-access-control
+

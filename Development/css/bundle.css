@@ -1,0 +1,515 @@
+/*START defoult styles defoult.php  START ////////////////////////////////////////////////////////////////////// */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica,sans-serif;
+  }
+
+/*END defoult styles defoult.php  END ////////////////////////////////////////////////////////////////////// */
+
+
+/*START defoult styles user_directory.php  START ////////////////////////////////////////////////////////////////////// */
+.user_directory_page {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #eaeaea;
+    min-height: 48rem;
+    flex-shrink: 1;
+
+  }
+
+  .user_directory_page h1 {
+    margin-top: 1rem;
+  }
+
+  .user_directory_page .user_list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 80rem;
+    padding-bottom: 10rem;
+  }
+
+  .user_directory_page .user_list .user_element{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80rem;
+    
+    padding: 2rem;
+    border: 1px solid black;
+    border-bottom: 3px solid #622567;
+    background-color: white;
+    margin-top: 1rem;
+  }
+
+  .user_directory_page .user_list .green {
+    border-bottom: 3px solid #256733;
+    color: #256733;
+  }
+
+  .user_directory_page .user_list .red {
+    border-bottom: 3px solid #67252f;
+    color: #67252f;
+  }
+
+  .user_directory_page .user_list .blue {
+    border-bottom: 3px solid #262567;
+    color: #262567;
+  }
+
+  .user_directory_page .user_list .yellow {
+    border-bottom: 3px solid #656725;
+    color: #656725;
+  }
+
+  .user_directory_page .user_list .black {
+    border-bottom: 3px solid #000000;
+    color: #000000;
+  }
+
+  .user_directory_page .user_list .user_element .title{
+    font-weight: 900;
+  }
+
+  .user_directory_page .user_list .user_element .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .user_directory_page .user_list .user_element .info p{
+    margin-right:  2rem;
+  }
+
+  .user_directory_page .user_list .user_element .info button{
+    padding: 0.2rem;
+    margin-left: 1rem;
+  }
+/*END defoult styles defoult.php  END ////////////////////////////////////////////////////////////////////// */
+
+/*START defoult styles user_page.php  START ////////////////////////////////////////////////////////////////////// */
+
+.user_page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #eaeaea;
+  min-height: 60rem;
+  height: auto;
+  padding-bottom: 1rem;
+
+}
+
+.user_page .user_data{
+  margin-top: 3rem;
+  border: 1px solid black;
+  background-color: white;
+  width: 40rem;
+  padding: 2rem;
+
+  border-bottom: 3px solid #622567;
+}
+
+
+.user_page .user_data .fullname{
+  font-weight: 900;
+}
+
+.user_page .user_data .green{
+  color: #256733;
+}
+
+.user_page .user_data .red{
+  color: #67252f;
+}
+
+.user_page .user_data .blue{
+  color: #262567;
+}
+
+.user_page .user_data .yellow{
+  color: #656725;
+}
+
+.user_page .user_data .black{
+  color: #000000;
+}
+
+.user_page .user_data .user_info{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.user_page .user_data .user_info h2{
+ margin-bottom: 1rem;
+}
+
+.user_page .user_data .user_info .element{
+  margin-top: 1rem;
+ }
+
+ .user_page .user_data a button {
+  margin-top: 2rem;
+
+  width: 10rem;
+  height: 2rem;
+ }
+
+/*END defoult styles user_page.php  END ////////////////////////////////////////////////////////////////////// */
+
+
+/*START Header component styles header.php  START ////////////////////////////////////////////////////////////////////// */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #622567;
+    height: 5.2rem;
+  }
+  header .logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  header .logo img {
+    width: 15.1rem;
+    margin-left: 1rem;
+  }
+  header .title_program {
+    color: white;
+    margin-top: 0;
+    margin-left: 12rem;
+  }
+  header .nav {
+    display: flex;
+    align-items: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+
+  header .nav .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    color: white;
+  }
+  header .nav .link:hover {
+    background-color: white;
+    color: black;
+  }
+  header .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    border-radius: 3px solid white;
+    background-color: #dedede;
+    margin-right: 2rem;
+  }
+  
+
+/*END Header component styles header.php  END ////////////////////////////////////////////////////////////////////// */
+
+/*START Request page styles requests_table.php  START ////////////////////////////////////////////////////////////////////// */
+
+.requests_page {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #eaeaea;
+    min-height: 58rem;
+    flex-shrink: 1;
+  }
+  .requests_page .filter_menu {
+    width: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-bottom: 3rem;
+  }
+  .requests_page .filter_menu p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .requests_page .filter_menu select {
+    width: 10rem;
+    height: 2rem;
+  }
+  .requests_page .filter_menu button {
+    width: 3rem;
+    height: 2rem;
+  }
+  .requests_page h1 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .requests_page h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .requests_page table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+  }
+  .requests_page table td, .requests_page table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  .requests_page table tr:hover td, .requests_page table tr:hover th {
+    background-color: rgb(208, 208, 208);
+  }
+  .requests_page table .pending td {
+    background-color: #7cb8e3;
+  }
+  .requests_page table .approved td {
+    background-color: #9bf2a5;
+  }
+  .requests_page table .decline td {
+    background-color: #ec888a;
+  }
+  .requests_page .pagination {
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .requests_page .pagination .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .requests_page .pagination .buttons .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 2rem;
+    border: 2px solid black;
+    margin-left: 1rem;
+    font-weight: bold;
+  }
+  .requests_page .pagination .buttons .button:hover {
+    background-color: gray;
+    color: white;
+  }
+  
+
+
+
+/*END Request page Code requests_table.php  END ////////////////////////////////////////////////////////////////////// */
+
+/*START login_page index.php  START ////////////////////////////////////////////////////////////////////// */
+.login_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #eaeaea;
+    min-height: 50rem;
+  }
+  .login_page h1 {
+    margin-left: 4rem;
+    margin-top: 6rem;
+  }
+  .login_page .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .login_page .wrapper .login_menu {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    border: solid 2px black;
+    margin-left: 4rem;
+    margin-top: 6rem;
+    padding: 1rem;
+  }
+  .login_page .wrapper .login_menu input {
+    width: 10rem;
+    margin: 1.3rem 1rem;
+  }
+
+  .login_page .wrapper .login_menu button {
+    padding: 0.3rem;
+  }
+  .login_page .wrapper .logo {
+    width: 40rem;
+    height: 10rem;
+    margin-top: 6rem;
+    margin-left: 30rem;
+  }
+  
+
+/*END Request page Code index.php  END ////////////////////////////////////////////////////////////////////// */
+
+/*START request_submit_page Code submit_request.php START ////////////////////////////////////////////////////////////////////// */
+
+.request_submit_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #eaeaea;
+    min-height: 65rem;
+}
+
+.request_submit_page h1 {
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.request_submit_page .desc{
+  margin-bottom: 2rem ;
+}
+
+.selector_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prof_type_selector {
+    margin-top: 1rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+
+.prof_type_selector p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.prof_type_selector select {
+    width: 10rem;
+    height: 2rem;
+}
+
+.prof_type_selector button {
+    width: 4rem;
+    height: 2rem;
+}
+
+.request_submit_page .request_submit_menu {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.request_submit_page .request_submit_menu .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border: solid 2px black;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.request_submit_page .request_submit_menu button { 
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.request_submit_page .request_submit_menu .column h2{
+    margin-top: 1rem;
+}
+
+.request_submit_page .request_submit_menu .column .input_field {
+    display: flex;
+    flex-direction: row;
+}
+
+.request_submit_page .request_submit_menu .column .input_field label {
+    margin-top: 2rem;
+    display: block;
+    width: 10rem;
+    margin-right: 5rem;
+}
+
+.request_submit_page .request_submit_menu .column .input_field label strong{
+  color: red;
+  font-weight: bold;
+  font-size: large;
+}
+
+.request_submit_page .request_submit_menu .column .input_field input { 
+    width: 10rem;
+    margin: 1.3rem 1rem;
+}
+
+/*END request_submit_page Code submit_request.php END ////////////////////////////////////////////////////////////////////// */
+
+
+/*START done_page Code done.php START ////////////////////////////////////////////////////////////////////// */
+
+.submit_page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #eaeaea;
+  height: 48rem;
+}
+
+.submit_page h1{
+  margin-top: 2rem;
+}
+
+.submit_page .submit_logo{
+  width: 10rem;
+  height: 10rem;
+  margin-top: 5rem;
+}
+
+.submit_page .control{
+  margin-top: 5rem;
+ }
+
+.submit_page .control button{
+  margin-left: 1rem;
+  width: 5rem;
+  height: 3rem;
+}
+
+
+/*END done_page Code done.php END ////////////////////////////////////////////////////////////////////// */
